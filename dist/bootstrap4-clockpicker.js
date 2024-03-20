@@ -417,7 +417,7 @@
       this.element
     ) {
       var time = this.getTime() || null;
-      callbackFunction.call(this.element, time);
+      callbackFunction.call(this.element, time, this.element);
     }
     if (triggerName) {
       this.element.trigger("clockpicker." + triggerName || "NoName");
