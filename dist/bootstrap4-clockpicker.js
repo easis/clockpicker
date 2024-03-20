@@ -649,7 +649,7 @@
 		if (!this.isAppended) {
 			// Append popover to body
 			if (this.options.inline) {
-				this.popover.insertAfter(this.element);
+				$body = this.popover.insertAfter(this.element);
 			} else {
 				$body = $(document.body).append(this.popover);
 			}
