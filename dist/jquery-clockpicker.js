@@ -357,7 +357,7 @@
 
 	function raiseCallback(callbackFunction) {
 		if (callbackFunction && typeof callbackFunction === "function") {
-			callbackFunction();
+			callbackFunction(this.element);
 		}
 	}
 
