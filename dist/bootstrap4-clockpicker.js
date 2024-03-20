@@ -368,7 +368,9 @@
 
 				// Reset cursor style of body
 				clearTimeout(movingTimer);
-				$body.removeClass("clockpicker-moving");
+				if ($body) {
+					$body.removeClass("clockpicker-moving");
+				}
 
 				// Unbind mousemove event
 				$doc.off(mousemoveEvent);
